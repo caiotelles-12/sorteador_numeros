@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Sorteador de Números</title>
+  </head>
+  <body>
+    <div class="sorteador_container">
+      <h1 class="sorteador_titulo">Sorteador de Números</h1>
+
+      <div class="sorteador_container_inputs">
+        <div class="sorteador_container_input min">
+          <label>Mín:</label>
+          <input type="number" class="inputs" id="input_min" />
+        </div>
+
+        <div class="sorteador_container_input max">
+          <label>Máx:</label>
+          <input type="number" class="inputs" id="input_max" />
+        </div>
+      </div>
+
+      <button class="sorteador_botao">Sortear</button>
+    </div>
+
+    <div class="janela_modal" id="janela_modal">
+      <div class="modal">
+        <h2>O NÚMERO SORTEADO FOI</h2>
+        <p class="saida">0</p>
+      </div>
+      <button class="fechar" id="fechar">X</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
